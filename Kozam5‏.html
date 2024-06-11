@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول العناصر</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: right;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        th {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+<h2>جدول العناصر</h2>
+
+<table>
+    <tr>
+        <th>العنصر</th>
+        <th> يوجد</th>
+        <th>لايوجد</th>
+        <th>الكمية</th>
+        <th>ملاحظات</th>
+    </tr>
+
+    
+    <tr>
+        <td>ماطور كهرباء</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>ماطور طرد الدخان</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>ماطور منشار</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>الة قص وفصل كامله</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>الة الوسائد الهوائية</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>اسطوانة الوسائد</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>توصيلات كهرباء</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>كشافات كهربائية</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>شنطة عده مكونة من (٣٦) قطعة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>حبال</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>اقراص ماطور المنشار</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>موزع ١,٥ بوصة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>موزع ٢,٥ بوصة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>بلطة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>سلم مفرد</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>سلم مزدوج</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>خطاف</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>مقص كهرباء</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>قایش شنكل</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>خرطوم ١,٥ بوصه</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>كشاف يدوي</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>ستره نجاه</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>سلم کلال</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>مفتاح رفع الغمارة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>عفريته + استبنه + عجل</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>مقص حديد</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>غطاس</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>نقالة طائرة + نقالة طي</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>قواذف ١,٥ بوصة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>قواذف ٢,٥ بوصة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>مكتف رغاوي</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>خلاط رغاوي</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>مفتاح منایق</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>مفتاح خراطيم</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>صفايه ٤ بوصة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>صفايه ٢,٥ بوصة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>منايق ٤ بوصة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>منايق ٢,٥ بوصة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>مفتاح متعدد الاغراض</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>بكرة إنزال</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>اجهزة تنفس كامل</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>طفاية بودرة</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>عصا تعابين</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>خرطوم ٢,٥ بوصه</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>طوق نجاه</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>قفازات يدوية</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>قاذف ذكي</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+    
+
+    <tr>
+        <td>قلع</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td class="quantity">
+            <button onclick="decrease(this)">-</button>
+            <input type="number" value="0" min="0">
+            <button onclick="increase(this)">+</button>
+        </td>
+        <td class="notes"><input type="text"></td>
+    </tr>
+
+</table>
+		<marquee direction="right" scrollamount="5">تم هذا العمل بواسطة سعود 0550447602</marquee>
+</body>
+</html>
